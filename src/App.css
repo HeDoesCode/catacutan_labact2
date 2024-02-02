@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* ======General====== */
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html body {
+  background-color: rgb(56, 58, 61);
+  color: white !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 100vh;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-grow: 1;
 }
 
-.App-link {
-  color: #61dafb;
+/* ======For Components====== */
+
+/* ======Navbar====== */
+.navbar {
+  font-size: 13px !important;
+  /* float: right; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar li:not(:last-child) {
+  margin-right: 0.5em;
+}
+
+.navbar li:nth-child(3) {
+  margin-right: 1.25em;
+}
+
+.navbar i {
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* ======SearchBar====== */
+.search {
+  width: 40% !important;
+}
+.search button {
+  background-color: white !important;
+}
+
+.search .input-group-text {
+  background-color: white !important;
+}
+.search input {
+  border: none !important;
+}
+
+/* ======Recent====== */
+.recent {
+  width: 40% !important;
+  font-size: 13px !important;
+}
+
+.recent i {
+  font-size: 2rem;
+}
+
+.recent .col:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
