@@ -10,7 +10,7 @@ function recentData() {
     },
     {
       name: "Github",
-      link: "devicon-github-original colored",
+      link: "devicon-github-original",
     },
     {
       name: "Canva",
